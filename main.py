@@ -1,12 +1,17 @@
 @namespace
 class StatusBarKind:
     Points = StatusBarKind.create()
+"""
+
+La parte 2 del juego es para 3 de abril de 2023. El juego es para CodeFighters.
+
+"""
 
 def on_a_pressed():
     game.splash("!Un rayo nooooooooooo¡")
     game.splash("Que mal en serio te volvere a ver en la parte 2.!Adios¡")
+    game.splash("Si deseas probar la nueva version espera al 3 de abril de 2023")
     game.over(True)
-    game.splash("Si deseas probar la nueva version espera al 23 de marzo de 2023")
 controller.A.on_event(ControllerButtonEvent.PRESSED, on_a_pressed)
 
 def on_b_pressed():
@@ -17,7 +22,9 @@ controller.B.on_event(ControllerButtonEvent.PRESSED, on_b_pressed)
 scene.set_background_image(assets.image("""
     AssetScreen
 """))
-game.set_dialog_frame(assets.image("""Text"""))
+game.set_dialog_frame(assets.image("""
+    Text
+"""))
 game.splash("Space Invaders")
 mySprite = sprites.create(assets.image("""
     Player
