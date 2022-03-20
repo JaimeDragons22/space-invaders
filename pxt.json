@@ -17,7 +17,8 @@
         "tilemap.g.ts",
         "images.g.jres",
         "images.g.ts",
-        "main.py"
+        "main.py",
+        "_locales/es-MX/README.md"
     ],
     "testFiles": [
         "test.ts"
